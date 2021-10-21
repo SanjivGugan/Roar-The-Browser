@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Roar</title>
+    </head>
+    <body>
+        <center>
+        <h1 style="font-family: cursive;font-weight: bolder;font-style: italic">Roar</h1>
+        <img src="giphy.gif">
+        <br>
+        <br>
+        <div class="form">
+            <form id="frmsrch" method="get">
+            <input type="text" id="tstsrch" placeholder="Type URL or Your Question">
+        </div>
+        <br>
+        <br>
+        <button id="tstsrchbtn">Search</button>
+        <script>
+            document.getElementById("frmsrch").onsubmit = function() {
+                window.location = 'http://www.google.com/search?q=' + document.getElementById("tstsrch").value;
+                return false;
+            }
+        </script>
+        <style>
+            body{
+                background-image:url("OIP.jpg") ;
+            }
+
+            #tstsrch{
+                border-radius: 10px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                background-color: blue;
+                font-family: cursive;
+                font-weight: bolder;
+                font-style: italic
+            }
+
+            #tstsrchbtn{
+                border-radius: 10px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                background-color: rgb(0, 255, 34);
+                font-family: cursive;
+                font-weight: bolder;
+                font-style: italic
+            }
+        </style>
+        </center>
+    </body>
+</html>
